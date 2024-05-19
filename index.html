@@ -10,10 +10,11 @@
     <div class="container">
         <h1>Game Kuis Matematika</h1>
         <div class="game-container">
+            <button id="startButton" onclick="startGame()">Mulai Game</button>
             <div id="question"></div>
-            <input type="number" id="answer" placeholder="Masukkan jawaban...">
-            <button onclick="submitAnswer()">Submit</button>
-            <button onclick="clearAnswer()">Clear</button>
+            <input type="number" id="answer" placeholder="Masukkan jawaban..." disabled>
+            <button id="submitButton" onclick="submitAnswer()" disabled>Submit</button>
+            <button id="clearButton" onclick="clearAnswer()" disabled>Clear</button>
             <div id="feedback"></div>
             <div id="score"></div>
             <div id="timer"></div>
