@@ -7,6 +7,7 @@ function startGame() {
     score = 0;
     timeLeft = 10;
     document.getElementById('score').innerText = `Skor: ${score}`;
+    document.getElementById('timer').innerText = `Waktu: ${timeLeft} detik`;
     document.getElementById('startButton').disabled = true;
     document.getElementById('answer').disabled = false;
     document.getElementById('submitButton').disabled = false;
