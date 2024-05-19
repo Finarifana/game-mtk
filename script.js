@@ -7,6 +7,10 @@ function startGame() {
     score = 0;
     timeLeft = 10;
     document.getElementById('score').innerText = `Skor: ${score}`;
+    document.getElementById('startButton').disabled = true;
+    document.getElementById('answer').disabled = false;
+    document.getElementById('submitButton').disabled = false;
+    document.getElementById('clearButton').disabled = false;
     nextQuestion();
 }
 
@@ -72,7 +76,8 @@ function gameOver() {
     document.getElementById('timer').innerText = '';
     document.getElementById('feedback').innerText = `Skor Akhir: ${score}`;
     document.getElementById('answer').value = '';
+    document.getElementById('answer').disabled = true;
+    document.getElementById('submitButton').disabled = true;
+    document.getElementById('clearButton').disabled = true;
+    document.getElementById('startButton').disabled = false;
 }
-
-// Mulai permainan saat halaman dimuat
-window.onload = startGame;
